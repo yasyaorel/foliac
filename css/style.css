@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Lato Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "BigJohn";
+    src: url(../fonts/BigJohn.ttf);
+}
+
+@font-face {
+    font-family: "SlimJoe";
+    src: url(../fonts/SlimJoe.ttf);
+}
+
+* {
+    transition: all .1s ease-in;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+header {
+    height: 650px;
+    position: relative;
+    padding-top: 36px;
+    background: url(../img/computer.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 686px;
+    background-color: #3c4854;
+    opacity: 0.85;
+}
+
+.hero {
+    max-width: 80%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero__logo {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    padding-top: 35px;
+    float: right;
+}
+
+.hero__item {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 50px;
+}
+
+.hero__item:hover {
+    color: #48bf72;
+}
+
+.slash {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    border-right: 1px solid grey;
+    transform: rotate(10deg);
+}
+
+.intro {
+    margin-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro__title {
+    font-family: "BigJohn", sans-serif;
+    font-size: 46px;
+}
+
+.intro__subtitle {
+    margin: 20px 0 45px;
+    font-family: "SlimJoe", sans-serif;
+    font-size: 30px;
+}
+
+.intro__btn {
+    padding: 12px 20px;
+    border: 2px solid #48bf72;
+    border-radius: 3px;
+    color: #48bf72;
+}
+
+.intro__btn:hover {
+    background-color: #48bf72;
+    color: #fff;
+}
+
+main {
+    background-color: #f9f9f9;
+}
+
+.filtres {
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.filtres__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    line-height: 35px;
+    margin: 0 5px;
+    background: #eaeaea;
+    text-align: center;
+    font-size: 16px;
+    color: #828991;
+    border: 2px solid #eaeaea;
+    border-radius: 3px;
+}
+
+.filtres__item:hover {
+    background: #48bf72;
+    color: #fff;
+    border: 2px solid #48bf72;
+    border-radius: 3px;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-box {
+    display: inline-block;
+    width: 385px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.right-box {
+    display: inline-block;
+    width: 555px;
+    float: right;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.left-box__title,
+.right-box__title {
+    font-size: 30px;
+}
+
+.left-box__image1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 302px;
+    border-radius: 10px;
+}
+
+.left-box__image2 img {
+    object-fit: cover;
+    height: 487px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-box__image1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.right-box__image2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 438px;
+    border-radius: 10px;
+}
+
+.left-box__image1,
+.left-box__image2,
+.right-box__image1,
+.right-box__image2 {
+ 
+    position: relative;
+    border-radius: 10px;
+    background: #48bf72;
+    margin-top: 50px;
+}
+
+.left-box__text,
+.right-box__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    top: 50%;
+    margin: auto;
+    opacity: 0;
+}
+
+.left-box__image1:hover img {
+    opacity: 0.3;
+}
+
+.left-box__image2:hover img {
+    opacity: 0.3;
+}
+
+.right-box__image1:hover img {
+    opacity: 0.3;
+}
+
+.right-box__image2:hover img {
+    opacity: 0.3;
+}
+
+.left-box__image1:hover .left-box__text {
+    opacity: 1;
+}
+
+.left-box__image2:hover .left-box__text {
+    opacity: 1;
+}
+
+.right-box__image1:hover .right-box__text {
+    opacity: 1;
+}
+
+.right-box__image2:hover .right-box__text {
+    opacity: 1;
+}
