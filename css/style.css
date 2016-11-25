@@ -1,3 +1,5 @@
+/* --- FONTS --- */
+
 @font-face {
     font-family: "Lato Regular";
     src: url(../fonts/Lato-Regular.ttf);
@@ -18,6 +20,9 @@
     src: url(../fonts/SlimJoe.ttf);
 }
 
+
+/* --- GLOBAL ---*/
+
 * {
     transition: all .1s ease-in;
 }
@@ -33,7 +38,11 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+    background-color: #f9f9f9;
 }
+
+
+/* --- HEADER --- */
 
 header {
     height: 650px;
@@ -47,34 +56,32 @@ header {
 .overlay {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 686px;
+    height: 100%;
     background-color: #3c4854;
     opacity: 0.85;
 }
 
+
+/* --- HERO ---*/
+
 .hero {
-    max-width: 80%;
     position: relative;
+    width: 72%;
     margin: 0 auto;
     z-index: 1;
+}
+
+.hero__logo {
+    display: inline-block;
 }
 
 a {
     text-decoration: none;
 }
 
-.hero__logo {
-    display: inline-block;
-    width: 20%;
-    height: 100%;
-    vertical-align: middle;
-}
-
 nav {
     display: inline-block;
-    vertical-align: middle;
     height: 100px;
     padding-top: 35px;
     float: right;
@@ -95,10 +102,13 @@ nav {
 .slash {
     display: inline-block;
     vertical-align: middle;
-    height: 25px;
+    height: 20px;
     border-right: 1px solid grey;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
+
+
+/* --- INTRO --- */
 
 .intro {
     margin-top: 150px;
@@ -108,13 +118,14 @@ nav {
 
 .intro__title {
     font-family: "BigJohn", sans-serif;
-    font-size: 46px;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
 
 .intro__subtitle {
-    margin: 20px 0 45px;
+    margin-top: 5px;
     font-family: "SlimJoe", sans-serif;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .intro__btn {
@@ -122,6 +133,7 @@ nav {
     border: 2px solid #48bf72;
     border-radius: 3px;
     color: #48bf72;
+    cursor: pointer;
 }
 
 .intro__btn:hover {
@@ -129,13 +141,15 @@ nav {
     color: #fff;
 }
 
+
+/* --- FILTRES ---*/
+
 main {
-    background-color: #f9f9f9;
+    padding-bottom: 60px;
 }
 
 .filtres {
-    width: 80%;
-    padding: 50px;
+    padding: 60px;
     margin: 0 auto;
     text-align: center;
     font-size: 0;
@@ -143,13 +157,12 @@ main {
 
 .filtres__item {
     display: inline-block;
-    vertical-align: middle;
-    width: 140px;
+    width: 110px;
     line-height: 35px;
     margin: 0 5px;
     background: #eaeaea;
-    text-align: center;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 600;
     color: #828991;
     border: 2px solid #eaeaea;
     border-radius: 3px;
@@ -164,14 +177,14 @@ main {
 
 .box {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .left-box {
     display: inline-block;
     width: 385px;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .right-box {
@@ -219,22 +232,24 @@ main {
 .left-box__image2,
 .right-box__image1,
 .right-box__image2 {
- 
     position: relative;
     border-radius: 10px;
     background: #48bf72;
+}
+
+.left-box__image2,
+.right-box__image2 {
     margin-top: 50px;
 }
 
 .left-box__text,
 .right-box__text {
     position: absolute;
-    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     width: 150px;
-    top: 50%;
+    top: 45%;
     margin: auto;
     opacity: 0;
 }
@@ -269,4 +284,195 @@ main {
 
 .right-box__image2:hover .right-box__text {
     opacity: 1;
+}
+
+
+/* --- ABOUT --- */
+
+section {
+    position: relative;
+    height: 500px;
+    background: url(../img/men-computer.jpg) 32% 47% no-repeat;
+    margin-bottom: 60px;
+}
+
+.about {
+    position: relative;
+    width: 72%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.about__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3c4854;
+    opacity: 0.65;
+}
+
+.about__text-box {
+    float: right;
+    padding-top: 70px;
+    padding-right: 20px;
+    width: 38%;
+    z-index: 1;
+}
+
+.about__title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about__subtitle {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+
+.about__text {
+    line-height: 1.5;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.about__btn {
+    padding: 12px 20px;
+    border: 2px solid #3c4955;
+    border-radius: 3px;
+    color: #3c4955;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.about__btn:hover {
+    color: #fff;
+    background-color: #3c4955;
+}
+
+
+/* --- CONTACT --- */
+
+.contact {
+    position: relative;
+    margin: auto;
+    max-width: 700px;
+}
+
+.contact__title {
+    font-family: "BigJohn", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #48bf72;
+    padding-bottom: 40px;
+}
+
+.contact__nom,
+.contact__email {
+    display: inline-block;
+    vertical-align: top;
+    width: 321px;
+    height: 50px;
+    border: 2px solid #3c4955;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.contact__email {
+    margin-left: 24px;
+}
+
+.contact__message {
+    width: 676px;
+    height: 228px;
+    margin-top: 35px;
+    border: 2px solid #3c4955;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+input {
+    vertical-align: top;
+    width: 240px;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.contact input,
+.contact textarea {
+    font-family: "Lato Bold", sans-serif;
+    color: #3c4955;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+textarea {
+    vertical-align: top;
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 591px;
+    height: 207px;
+    border: none;
+    outline: none;
+}
+
+.contact__btn {
+    width: 681px;
+    line-height: 50px;
+    margin: 35px 0 60px;
+    background: #48bf72;
+    border-radius: 3px;
+    border: 2px solid #48bf72;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact__btn:hover {
+    background-color: #f9f9f9;
+    color: #48bf72;
+    font-weight: 700;
+}
+
+
+/* --- FOOTER ---*/
+
+footer {
+    padding-top: 60px;
+    height: 170px;
+    background-color: #3c4955;
+}
+
+.footer {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.footer__copyright {
+    display: inline-block;
+    padding-top: 60px;
+    float: left;
+    font-family: "Lato Regular", sans-serif;
+    color: #cbced2;
+}
+
+.footer__copyright a {
+    font-family: "Lato Bold", sans-serif;
+    color: #fff;
+}
+
+.footer__social {
+    display: inline-block;
+    padding-top: 40px;
+    float: right;
+}
+
+.footer__social a {
+    margin-left: 45px;
 }
