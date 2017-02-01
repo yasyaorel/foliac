@@ -27,8 +27,7 @@
     transition: all .1s ease-in;
 }
 
-body,
-html {
+* {
     margin: 0;
     padding: 0;
 }
@@ -42,34 +41,44 @@ body {
 }
 
 
+/* --- MEDIA --- */
+
+
+/* 
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 960px;
+$breakpoint-xlarge: 1220px; 
+*/
+
+
 /* --- HEADER --- */
 
 header {
+    width: 100%;
     height: 650px;
-    position: relative;
-    padding-top: 36px;
-    background: url(../img/computer.jpg) center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
 }
 
-.overlay {
+.header__overlay {
     position: absolute;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background-color: #3c4854;
-    opacity: 0.85;
+    opacity: 0.65;
+    z-index: 5;
 }
 
 
 /* --- HERO ---*/
 
 .hero {
-    position: relative;
-    width: 72%;
+    padding-top: 36px;
+    position: absolute;
+    top: 0;
+    left: 15%;
     margin: 0 auto;
-    z-index: 1;
+    width: 72%;
+    z-index: 6;
 }
 
 .hero__logo {
@@ -111,7 +120,10 @@ nav {
 /* --- INTRO --- */
 
 .intro {
+    position: absolute;
+    z-index: 5;
     margin-top: 150px;
+    left: 10%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -123,7 +135,7 @@ nav {
 }
 
 .intro__subtitle {
-    margin-top: 5px;
+    margin: 5px 0 36px 0;
     font-family: "SlimJoe", sans-serif;
     font-size: 26px;
 }
@@ -239,17 +251,20 @@ main {
     position: relative;
     border-radius: 10px;
     background: #48bf72;
-    
 }
+
 .left-box__image1 {
     height: 302px;
 }
+
 .left-box__image2 {
     height: 487px;
 }
+
 .right-box__image1 {
     height: 350px;
 }
+
 .right-box__image2 {
     height: 438px;
 }
@@ -269,7 +284,6 @@ main {
     top: 45%;
     margin: auto;
     opacity: 0;
-    
 }
 
 .left-box__image1:hover img {
