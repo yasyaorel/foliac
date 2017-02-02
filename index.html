@@ -6,18 +6,18 @@
     <title>Foliac</title>
     <link rel="shortcut icon" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/isotope-docs.min.js"></script>
+    <script src="js/masonry-docs.min.js"></script>
     <script src="js/main.js"></script>
-    <!--  <script src="js/masonry-docs.min.js"></script> -->
-    <!--  <script src="js/isotope-docs.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/isotope-docs.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slider-styles.css">
 </head>
 
 <body>
     <header>
-    <div class="header__overlay"></div>
+        <div class="header__overlay"></div>
         <div class="slides">
             <img class="slides__img showing" src="img/computer.jpg">
             <img class="slides__img" src="img/site1.jpg">
@@ -29,7 +29,6 @@
             <img class="slides__img" src="img/site9.jpg">
         </div>
         <div class="hero">
-
             <div class="hero__logo">
                 <a href="#"><img src="img/foliac-logo.png" alt="foliac-logo"></a>
             </div>
@@ -52,11 +51,25 @@
     </header>
     <main>
         <div class="filtres">
-            <a href="#" class="filtres__item"> Tous les projets </a>
-            <a href="#" class="filtres__item"> Webdesign </a>
-            <a href="#" class="filtres__item"> UI/UX design </a>
-            <a href="#" class="filtres__item"> Illustration </a>
-            <a href="#" class="filtres__item"> Motion design </a>
+            <span class="filtres__item active" data-filter="*"> Tous les projets </span>
+            <span class="filtres__item" data-filter=".web"> Webdesign </span>
+            <span class="filtres__item" data-filter=".ui"> UI/UX design </span>
+            <span class="filtres__item" data-filter=".illustr"> Illustration </span>
+            <span class="filtres__item" data-filter=".mot"> Motion design </span>
+        </div>
+        <div class="isotope">
+            <img src="img/1.jpg" class="isotope__img web illustr">
+            <img src="img/2.jpg" class="isotope__img ui mot">
+            <img src="img/3.jpg" class="isotope__img illustr web mot">
+            <img src="img/4.jpg" class="isotope__img mot web">
+            <img src="img/5.jpg" class="isotope__img web illustr">
+            <img src="img/6.jpg" class="isotope__img ui illustr">
+            <img src="img/7.jpg" class="isotope__img illustr mot">
+            <img src="img/8.jpg" class="isotope__img mot web">
+            <img src="img/9.jpg" class="isotope__img web mot ui">
+            <img src="img/10.jpg" class="isotope__img web ui">
+            <img src="img/11.jpg" class="isotope__img illustr ui">
+            <img src="img/12.jpg" class="isotope__img web illustr ui">
         </div>
         <div class="box">
             <div class="left-box">
